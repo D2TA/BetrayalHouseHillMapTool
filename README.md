@@ -22,3 +22,4 @@ Patch 0.x: Future
   - Placement of the types in "decks"
 - Other 6 roster of players
 - Proper Board Layout
+- Zooming onto map
