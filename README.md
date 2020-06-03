@@ -23,8 +23,8 @@ Patch 0.2: 2020-06-04 (Expected)
 - Improved visual styling
 
 Patch 0.x: Future
+- Include 'How to Play' instructions and details on game mechanics
 - Implement item storage 
-- Include instructions and playing mechanics
 - Activate Haunting button to determine the type of haunting
 - Adjust view for mobile usage
 - Creating player lobbies
