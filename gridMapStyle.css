@@ -1,0 +1,463 @@
+body {
+  background-color: white;
+}
+
+video {
+  object-fit: contain;
+}
+
+.PlayerPortrait{
+  width: auto;
+  height: auto;
+}
+
+.CenterImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+#container {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	width:960px;
+	padding: 0;
+	border: none;
+}
+
+.grid {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid rgb(255, 196, 0);
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.photo{
+    grid-area: photo;
+}
+
+/* Game Board Containers */
+.parent{
+    display: flex;
+    height: 1000px;
+    flex-direction: row;
+}
+
+.infoColumn{
+  border: 1px solid black;
+}
+
+.boardColumn{
+  border: 1px solid black;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.PlayerBox{
+  height: 100px;
+}
+
+.TileLogBox{
+  background-color: rgb(199, 199, 199);
+  border: 1px solid blue;
+  overflow-wrap: break-word;
+  height: 300px;
+}
+
+.TileView{
+  height: 325px;
+  border: 1px solid black;
+}
+
+.OmenInfo {
+  width: 100%;
+  background-color: rgb(199, 199, 199);
+  padding: 8px;
+  border: 1px solid black;
+}
+
+/* Player Information Style */
+.PlayerInfo{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(185, 185, 185);
+  border: 1px solid black;
+}
+
+/* Character Stats Slider Style */
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: rgb(255,255,255);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(0, 255, 149);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.sliderticks p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1px;
+  background: rgb(0, 0, 0);
+  height: 10px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+
+
+
+/* Omen Stats Slider Style */
+* {
+  box-sizing: border-box;
+}
+
+.slider2 {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: rgb(255,255,255);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider2:hover {
+  opacity: 1;
+}
+
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(0, 255, 128);
+  cursor: pointer;
+}
+
+.slider2::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: rgb(0, 255, 128);
+  cursor: pointer;
+}
+
+.slider2ticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.slider2ticks p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1px;
+  background: rgb(0, 0, 0);
+  height: 10px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+
+#Player01_Icon {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  margin: auto;
+}
+
+#Player01_Icon_header {
+  cursor: move;
+  z-index: 10;
+  background-color: red;
+  color: #fff;
+  height: 10px;
+}
+
+#Player02_Icon {
+  position: absolute;
+  z-index: 13;
+  text-align: center;
+  margin: auto;
+}
+
+#Player02_Icon_header {
+  cursor: move;
+  z-index: 14;
+  background-color: rgba(255, 217, 0, 0.596);
+  color: #fff;
+  height: 10px;
+}
+
+#Player03_Icon {
+  position: absolute;
+  z-index: 13;
+  text-align: center;
+  margin: auto;
+}
+
+#Player03_Icon_header {
+  cursor: move;
+  z-index: 14;
+  background-color: green;
+  color: #fff;
+  height: 10px;
+}
+
+#Player04_Icon {
+  position: absolute;
+  z-index: 13;
+  text-align: center;
+  margin: auto;
+}
+
+#Player04_Icon_header {
+  cursor: move;
+  z-index: 14;
+  background-color: purple;
+  color: #fff;
+  height: 10px;
+}
+
+#Player05_Icon {
+  position: absolute;
+  z-index: 13;
+  text-align: center;
+  margin: auto;
+}
+
+#Player05_Icon_header {
+  cursor: move;
+  z-index: 14;
+  background-color: blue;
+  color: #fff;
+  height: 10px;
+}
+
+#Player06_Icon {
+  position: absolute;
+  z-index: 13;
+  text-align: center;
+  margin: auto;
+}
+
+#Player06_Icon_header {
+  cursor: move;
+  z-index: 14;
+  background-color: black;
+  color: #fff;
+  height: 10px;
+}
+
+.playerBox {
+  height: 300px;
+  border: 1px solid black;
+}
+
+.DiceRoll {
+  border: 1px solid black;
+  background-color: rgb(199, 199, 199);
+}
+
+.DiceTable{
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  background-color: rgb(185, 185, 185);
+}
+
+/* Player 01 Dice Roll */
+
+.Player01Dice {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 58, 58);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Player01Dice:hover {
+  background-color: rgb(133, 0, 0);
+}
+
+.Player01Dice:active {
+  background-color: rgb(133, 0, 0);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Player 02 Dice Roll */
+.Player02Dice {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Player02Dice:hover {
+  background-color: rgb(133, 102, 0);
+}
+
+.Player02Dice:active {
+  background-color: rgb(133, 102, 0);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Player 03 Dice Roll */
+.Player03Dice {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Player03Dice:hover {
+  background-color: #3e8e41
+}
+
+.Player03Dice:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Player 04 Dice Roll */
+.Player04Dice {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(186, 103, 189);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Player04Dice:hover {
+  background-color: rgb(126, 0, 131);
+}
+
+.Player04Dice:active {
+  background-color: rgb(126, 0, 131);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Player 05 Dice Roll */
+.Player05Dice {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(55, 118, 255);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Player05Dice:hover {
+  background-color: rgb(0, 41, 131);
+}
+
+.Player05Dice:active {
+  background-color: rgb(0, 41, 131);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Player 06 Dice Roll */
+.Player06Dice {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgba(104, 104, 104, 0.486);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Player06Dice:hover {
+  background-color: rgba(0, 0, 0, 0.089);
+}
+
+.Player06Dice:active {
+  background-color: rgba(0, 0, 0, 0.089);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

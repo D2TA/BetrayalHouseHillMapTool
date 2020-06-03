@@ -1,0 +1,336 @@
+<html>
+<html>
+<head>
+	<link rel=stylesheet type="text/css" href="gridMapStyle.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="GridMap.js"></script>
+    <script type="text/javascript" src="GridFunction.js.js"></script> 
+</head>
+
+<body onload="start()">
+<!-- <video width: 100% height= "250px" autoplay = "autoplayer" loop= "loop" muted="muted">
+    <source src="Betrayal_2_0.mp4" type="video/mp4">
+</video> -->
+<img src='Betrayal_logo_0.png' alt="Betraryal At House On the Hills - Map Tool" class="CenterImg">
+<table class="OmenInfo">
+    <tr>
+        <th>Omen Counter:</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="range">
+                <!-- Iteration #1: Player Slider -->
+                <!-- <input type="range" name="SpeedPlayer01" min="0" max="8" 
+                step="1" onchange="updateRangeInput('Player01','Speed',this.value);"> -->
+                <!-- <input type="text" id="SpeedPlayer01" value=""> -->
+
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="12" class="slider2" value = "0">
+                <div class="slider2ticks">
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p>11</p>
+                    <p>12</p>
+                </div>
+            </div>
+       </td>
+    </tr>
+</table>
+
+<br><br>
+<table class = 'PlayerInfo'>
+    <tr>
+        <th>
+            Player Information:
+        </th>
+        <th> <p style="color:red">Ox Bellows</p>
+            <img id='Player01' class="PlayerPortrait">
+        </th>
+        <th> <p style="color:rgb(255,215,0)">Missy Debourde</p>
+            <img id='Player02' class="PlayerPortrait">
+        </th>
+        <th> <p style="color:green">Peter Akimoto</p>
+            <img id='Player03' class="PlayerPortrait">
+        </th>
+        <th> <p style="color:purple">Jenny LeClerc</p>
+            <img id='Player04' class="PlayerPortrait">
+        </th>
+        <th> <p style="color:blue">Vivian Lopez</p>
+            <img id='Player05' class="PlayerPortrait">
+        </th>
+        <th> <p style="color:black">Father Rhinehardt</p>
+            <img id='Player06' class="PlayerPortrait">
+        </th>
+    </tr>
+    <tr>
+        <td>Speed:</td>
+        <td id="SpeedPlayer01">
+            <div class="range">
+                <!-- Iteration #1: Player Slider -->
+                <!-- <input type="range" name="SpeedPlayer01" min="0" max="8" 
+                step="1" onchange="updateRangeInput('Player01','Speed',this.value);"> -->
+                <!-- <input type="text" id="SpeedPlayer01" value=""> -->
+
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="8" class="slider" value = "6" id = "SpeedPlayer01Value">
+                <div class="sliderticks">
+                    <p>0</p>
+                    <p>2</p>
+                    <p>2</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>5</p>
+                    <p>6</p>
+                </div>
+            </div>
+        </td>
+        <td id="SpeedPlayer02">
+            <div class="range">
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="8" class="slider" value = "3" id = "SpeedPlayer02Value">
+                <div class="sliderticks">
+                    <p>0</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>6</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>7</p>
+                </div>
+            </div>           
+        </td>
+        <td id="SpeedPlayer03">
+            <div class="range">
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="8" class="slider" value = "5" id = "SpeedPlayer03Value">
+                <div class="sliderticks">
+                    <p>0</p>
+                    <p>2</p>
+                    <p>2</p>
+                    <p>2</p>
+                    <p>4</p>
+                    <p>6</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>7</p>
+                </div>
+            </div>   
+        </td>
+        <td id="SpeedPlayer04">
+            <div class="range">
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="8" class="slider" value = "5" id = "SpeedPlayer04Value">
+                <div class="sliderticks">
+                    <p>0</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>4</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>8</p>
+                </div>
+            </div>   
+        </td>
+        <td id="SpeedPlayer05">
+            <div class="range">
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="8" class="slider" value = "5" id = "SpeedPlayer05Value">
+                <div class="sliderticks">
+                    <p>0</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>4</p>
+                    <p>4</p>
+                    <p>4</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+            </div>   
+        </td>
+        <td id="SpeedPlayer06">
+            <div class="range">
+                <!-- Iteration #2: Player Slider -->
+                <input type="range" min="0" max="8" class="slider" value = "5" id = "SpeedPlayer06Value">
+                <div class="sliderticks">
+                    <p>0</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>7</p>
+                </div>
+            </div>   
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<div class="parent">
+    <div class="TileColumn">
+        <div align= "center" class="infoColumn">
+            <h1>On your turn:</h1>
+            <br>
+            1) Move based on speed, to discover rooms
+            <br>
+            2) Use any Item or Omen
+            <br>
+            3) Attack
+            <br>
+            <button type="button" onclick="HauntingActivate()">Click to Activate Haunting</button>
+            <br>
+            <br>
+             
+        </div>
+
+        <div class='PlayerBox' style='height: 50px'> 
+            <div>
+                <div id="Player01_Icon">
+                    <div id="Player01_Icon_header"><p style='font-size:11px'>01</p></div>
+                </div>
+                <div id="Player02_Icon">
+                    <div id="Player02_Icon_header"><p style='font-size:11px'>02</p></div>
+                </div>
+                <div id="Player03_Icon">
+                    <div id="Player03_Icon_header"><p style='font-size:11px'>03</p></div>
+                </div>
+                <div id="Player04_Icon">
+                    <div id="Player04_Icon_header"><p style='font-size:11px'>04</p></div>
+                </div>
+                <div id="Player05_Icon">
+                    <div id="Player05_Icon_header"><p style='font-size:11px'>05</p></div>
+                </div>
+                <div id="Player06_Icon">
+                    <div id="Player06_Icon_header"><p style='font-size:11px'>06</p></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="DiceRoll">
+            <table class = "DiceTable">
+                <br><br>
+                <tr>
+                    <td>
+                        <button class = "Player01Dice" type="button" onclick="DiceRoll('SpeedPlayer01Value')">Click to Roll Dice</button>
+                        <br>
+                    </td>
+                    <td>
+                        <button class = "Player02Dice" type="button" onclick="DiceRoll('SpeedPlayer02Value')">Click to Roll Dice</button>
+                        <br>
+                    </td>
+                    <td>
+                        <button class = "Player03Dice" type="button" onclick="DiceRoll('SpeedPlayer03Value')">Click to Roll Dice</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class = "Player04Dice" type="button" onclick="DiceRoll('SpeedPlayer04Value')">Click to Roll Dice</button>
+                    </td>
+                    <td>
+                        <button class = "Player05Dice" type="button" onclick="DiceRoll('SpeedPlayer05Value')">Click to Roll Dice</button>
+                    </td>
+                    <td>
+                        <button class = "Player06Dice" type="button" onclick="DiceRoll('SpeedPlayer06Value')">Click to Roll Dice</button>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div>
+                <br>
+                <h1 id='DiceValue'></h1>
+                <h1 id='TotalDiceValue'></h1>
+            </div>
+            <br>
+        </div>
+        <div class="TileView">
+            <button onclick="RandomTile()">Generate Tile</button>
+            <br>
+            <img id="RandomTileValue" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="TileLogBox"> 
+            <h1>Tile Log</h1>
+            <p id="TileLog"; style="width: 500px; height: 250px; overflow-y: scroll;"></p>
+        </div>
+        <div style="height: 250px;">
+            
+        </div>
+    </div>
+    <div class="boardColumn">
+        <div id="container">
+        </div>
+    </div>
+</div>
+
+<script>
+    // Player Icon Functionality
+dragElement(document.getElementById("Player01_Icon"));
+dragElement(document.getElementById("Player02_Icon"));
+dragElement(document.getElementById("Player03_Icon"));
+dragElement(document.getElementById("Player04_Icon"));
+dragElement(document.getElementById("Player05_Icon"));
+dragElement(document.getElementById("Player06_Icon"));
+
+function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "_header")) {
+        // if present, the header is where you move the DIV from:
+        document.getElementById(elmnt.id + "_header").onmousedown = dragMouseDown;
+    } else {
+        // otherwise, move the DIV from anywhere inside the DIV:
+        elmnt.onmousedown = dragMouseDown;
+    };
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+    };
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    };
+
+    function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+    };
+};
+</script>
+
+</body>
+</html>
