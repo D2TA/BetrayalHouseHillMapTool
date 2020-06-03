@@ -1,3 +1,4 @@
+// Patch 0.1
 // Initial Board Generation
 PlayerNames = ['','Ox Bellows','Missy Debourde', 'Peter Akimoto', 'Jenny LeCerc', 'Vivian Lopez', 'Father Rhinehardt']
 initialGridValue = 15;
@@ -172,8 +173,6 @@ function RandomTile(){
     TileLogString = TileLog.toString();
     document.getElementById("TileLog").innerHTML = TileLogString.replace(/,/g,'');
     document.getElementById("TileLog").scrollTop = document.getElementById("TileLog").scrollHeight;
-
-    alert(PlayerStats['Player03'].PlayerName)
     return(TileLog);
 };
 
