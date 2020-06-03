@@ -13,10 +13,9 @@ Patch 0.2: 2020-06-04 (Expected)
 - Finalized Character trait database
   - Determine database solution
 - Other 6 roster of players
-
-Patch 0.3: 2020-06-06 (Expected)
 - Randomly generating based on Upper, Ground or Basement
   - Placement of the types in "decks"
+  - Tile animation?
 
 Patch 0.x: Future
 - Implement item storage 
