@@ -11,6 +11,7 @@ Patch 0.1: 2020-06-02
 
 Patch 0.x: Future
 - Finalized Character trait database
+  - Determine database solution
 - Implement item storage 
 - Include instructions and playing mechanics
 - Activate Haunting button to determine the type of haunting
