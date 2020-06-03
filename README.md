@@ -5,10 +5,12 @@ Ownership of all the game mechanics and designs go to Avalon Hill.
 
 [Click here to try out the Map Assist Tool](https://d2ta.github.io/BetrayalHouseHillMapTool/gridMap.html) 
 
-> Patch 0.1: 2020-06-02
-> - Working Game Board
-> - Randomized Character Portrait
-> - Functional tile generator (4 types implemented)
+> Note: Character Portraits are Pokemon portraits from Mystery Dungeon 2 pulled from [pkmn.net](https://pkmn.net/?action=content&page=viewpage&id=8710&parentsection=87). We utilized an R code to download each portrait.
+
+### Patch 0.1: 2020-06-02
+- Working Game Board
+- Randomized Character Portrait
+- Functional tile generator (4 types implemented)
 
 ### Patch 0.2: 2020-06-04 (Expected)
 - Finalized Database
