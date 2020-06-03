@@ -19,4 +19,6 @@ Patch 0.x: Future
 - Include better styling
 - Creating player lobbies
 - Randomly generating based on Upper, Ground or Basement
+  - Placement of the types in "decks"
 - Other 6 roster of players
+- Proper Board Layout
