@@ -8,5 +8,4 @@ The purpose of this tool is build a working/functional web game of the board gam
 > - Randomized Character Portrait
 > - Functional tile generator (4 types implemented)
 
-
-> Ownership of all the game mechanics and designs go to Avalon Hill.
+Ownership of all the game mechanics and designs go to Avalon Hill.
