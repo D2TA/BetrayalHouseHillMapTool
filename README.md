@@ -17,3 +17,4 @@ Patch 0.x: Future
 - Activate Haunting button to determine the type of haunting
 - Adjust view for mobile usage
 - Include better styling
+- Creating player lobbies
