@@ -1,8 +1,6 @@
 # Welcome to the Betrayal at the House on the Hills (2nd Ed.) Map Assist Tool
 The purpose of this tool is build a working/functional web game of the game [Betrayal at House on the Hill](https://avalonhill.wizards.com/avalon-hill-betrayal-house-hill)
 
-Ownership of all the game mechanics and 
-
 Patch 0.1: 2020-06-02
 - Working Game Board
 - Randomized Character Portrait
@@ -25,3 +23,5 @@ Patch 0.x: Future
 - Creating player lobbies
 - Proper Board Layout
 - Zooming onto map
+
+Ownership of all the game mechanics and designs go to Avalon Hill.
