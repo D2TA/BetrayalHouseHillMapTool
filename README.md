@@ -27,6 +27,8 @@ Ownership of all the game mechanics and designs go to Avalon Hill.
 ### Patch 0.x: Future
 - Include 'How to Play' instructions and details on game mechanics
 - Implement item storage 
+  - [ ] Omen 
+  - [ ] Item
 - Activate Haunting button to determine the type of haunting
 - Adjust view for mobile usage
 - Creating player lobbies
