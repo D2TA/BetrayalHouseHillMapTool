@@ -29,4 +29,8 @@ Patch 0.x: Future
 - Proper Board Layout
 - Zooming onto map
 
+
+
+
+
 > Ownership of all the game mechanics and designs go to Avalon Hill.
