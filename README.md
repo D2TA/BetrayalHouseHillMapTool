@@ -18,3 +18,5 @@ Patch 0.x: Future
 - Adjust view for mobile usage
 - Include better styling
 - Creating player lobbies
+- Randomly generating based on Upper, Ground or Basement
+- Other 6 roster of players
