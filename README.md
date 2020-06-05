@@ -12,7 +12,7 @@ Ownership of all the game mechanics and designs go to Avalon Hill.
 - Randomized Character Portrait
 - Functional tile generator (4 types implemented)
 
-### Patch 0.2: 2020-06-04 (Expected)
+### Patch 0.2: Future
 - Finalized Database
   - [ ] Determine database solution
   - [ ] Add in character traits and information
