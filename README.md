@@ -1,7 +1,7 @@
 # Welcome to the Betrayal at the House on the Hills (2nd Ed.) Map Assist Tool
 The purpose of this tool is build a working/functional web game of the board game [Betrayal at House on the Hill](https://avalonhill.wizards.com/avalon-hill-betrayal-house-hill).
 
-Ownership of all the game mechanics and designs go to Avalon Hill.
+The literal and graphical information presented on this website about the [Betrayal at House on the Hill](https://avalonhill.wizards.com/avalon-hill-betrayal-house-hill) , including images and text, is copyright of Avalon Hill. This project/tool is not produced by, endorsed by, supported by, or affiliated with Avalon Hill.
 
 [Click here to try out the Map Assist Tool](https://d2ta.github.io/BetrayalHouseHillMapTool/gridMap.html) 
 
